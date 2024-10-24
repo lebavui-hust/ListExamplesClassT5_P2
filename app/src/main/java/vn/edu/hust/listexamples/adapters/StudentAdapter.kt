@@ -1,6 +1,5 @@
-package vn.edu.hust.listexamples
+package vn.edu.hust.listexamples.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +7,8 @@ import android.widget.BaseAdapter
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
+import vn.edu.hust.listexamples.R
+import vn.edu.hust.listexamples.models.StudentModel
 
 class StudentAdapter(val students: List<StudentModel>): BaseAdapter() {
   override fun getCount(): Int = students.size
